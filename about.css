@@ -738,6 +738,15 @@ nav a.active::after {
     overflow: hidden;
   }
   
+  .bar-section{
+    background-color: #3021ff;
+    
+  }
+  .bar-left{
+    text-align: center;
+    image-rendering: auto;
+  }
+
   /* Left Side Triangle Background */
   .trainers-left {
     width: 100%;
@@ -807,6 +816,7 @@ nav a.active::after {
     width: 320px;
     height: 480px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.521);
+    
     
   }
   .trainer2{
