@@ -113,48 +113,190 @@
         <h3>Steam Bath</h3>
         <hr>
         <p>Boost recovery and reduce muscle soreness with invigorating ice bath therapy.</p>
-      </div>
-      
+      </div> 
+    </div>
+  </section>
+ <!-- About Section -->
+
+
+<section class="about-section">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>About Us</h1>
+    <p>
+      BZ Fitness Bodybuilding and Fitness Centre has been operating since 2016, bringing over seven years of expertise in health and fitness. Launched in Kuwait, it has quickly become one of the country’s fastest-growing fitness brands, dedicated to helping individuals stay fit using the most advanced training techniques.
+      <br><br>
+      In a short span, BZ Fitness has expanded to over six branches across Kuwait. Beyond offering top-tier bodybuilding and fitness services, the centre has diversified its operations—launching a fitness equipment manufacturing division and an e-commerce platform in 2022 to cater to growing customer demand.
+    </p>
+
+    <button class="cta-button">
+      Learn More <span class="arrow">➜</span>
+    </button>
 
     
     </div>
-  </section>
+  </div>
+</section>
+
+<style>
+.about-section {
+  position: relative;
+  background: url('./gym-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.about-section .content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-section h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #a020f0, #6b00b3);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 5px 0 #000;
+  transition: 0.3s ease;
+}
+
+.cta-button .arrow {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(160, 32, 240, 0.4);
+}
+
+.videos {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-thumb {
+  position: relative;
+  width: 180px;
+  height: 110px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #6b00b3;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 🔽 Responsive Media Queries */
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 32px;
+  }
+
+  .about-section p {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
+  .videos {
+    gap: 16px;
+  }
+
+  .video-thumb {
+    width: 45%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 40px 16px;
+  }
+
+  .about-section h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .about-section p {
+    text-align: center;
+  }
+
+  .cta-button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .videos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-thumb {
+    width: 100%;
+    height: 160px;
+  }
+}
+</style>
 
 
-
-  <section class="about-section">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1>About Us</h1>
-      <p>
-        BZ Fitness Bodybuilding and Fitness Centre has been operating since 2016, bringing over seven years of expertise in health and fitness. Launched in Kuwait, it has quickly become one of the country’s fastest-growing fitness brands, dedicated to helping individuals stay fit using the most advanced training techniques.
-
-In a short span, BZ Fitness has expanded to over six branches across Kuwait. Beyond offering top-tier bodybuilding and fitness services, the centre has diversified its operations—launching a fitness equipment manufacturing division and an e-commerce platform in 2022 to cater to growing customer demand.
-
-
-      </p>
-
-      <button class="cta-button">
-        Learn More
-        <span class="arrow">➜</span>
-      </button>
-
-      <div class="videos">
-        <div class="video-thumb">
-          <img src="./thumbnail.jpg" alt="Video 1" />
-          <span class="play-btn">▶</span>
-        </div>
-        <div class="video-thumb">
-          <img src="./transformation.png" alt="Video 2" />
-          <span class="play-btn">▶</span>
-        </div>
-        <div class="video-thumb">
-          <img src="./transformation.png" alt="Video 3" />
-          <span class="play-btn">▶</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="bar-section">
     <div class="bar-left">
